@@ -1,0 +1,25 @@
+Package: ksulib
+Type: Package
+Title: Search Testing Tools
+Version: 0.1.0
+Date: 2017-04-12
+Author: Kristin Yeager
+Maintainer: Kristin Yeager <kyeager4@kent.edu>
+Description: Convenience functions for automated testing 
+    of Kent State University Library's site search.
+Encoding: UTF-8
+LazyData: TRUE
+Depends:
+    dplyr,
+    rvest,
+    tidyr,
+    xml2,
+    stringi,
+    httr,
+    curl
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
