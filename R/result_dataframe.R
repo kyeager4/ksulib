@@ -26,7 +26,8 @@ result_dataframe <- function(nodelist){
   hits <- left_join(piece1, piece2, by="row") %>%
     mutate(class = html_attr(nodelist, "class")) %>%
     rename(snippet_desc = p,
-           snippet_url = span)
+           snippet_url = span,
+           hit_order = row)
 
   return(hits)
 }
