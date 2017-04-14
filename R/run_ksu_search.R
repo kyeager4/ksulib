@@ -7,8 +7,12 @@
 #' Dataframe containing the first page of hits for each search query.
 #' @export
 run_ksu_search <- function(search_terms, production=TRUE){
-  results <- lapply(search_terms,
-                    function(x){get_search_contents(x, production=production)$html}) %>%
+  docs <- lapply(search_terms,
+                 function(x){get_search_contents(x, production=production)$html})
+
+  names(docs) <- search_terms
+
+  results <- docs %>%
     lapply(., extract_result_list) %>%
     lapply(., extract_search_result) %>%
     lapply(., result_dataframe) %>%
