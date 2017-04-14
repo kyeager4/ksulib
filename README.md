@@ -20,6 +20,8 @@ install_github("kyeager4/ksulib")
 
 Once the packages are installed, you do not have to re-install them the next time you launch R.
 
+If there are changes to the code in this package, you can rerun `install_github("kyeager4/ksulib")` to update to the most recent version.
+
 ## Using this package
 
 To use this package:
@@ -49,7 +51,7 @@ This package is a work in progress.
 
 High priority:
 
-- [ ] The "term" column in the output dataset should contain the original queries, rather than a number
+- [X] The "term" column in the output dataset should contain the original queries, rather than a number (completed 2017-04-14)
 - [ ] Handling queries with zero results
 - [ ] Option of retrieving more than one page of hits for a query
 - [ ] Option of retrieving just the top _n_ hits for a query
