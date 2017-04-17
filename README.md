@@ -53,5 +53,6 @@ High priority:
 
 - [X] The "term" column in the output dataset should contain the original queries, rather than a number (completed 2017-04-14)
 - [ ] Handling queries with zero results
+- [ ] Output dataframe should include URL for query, not just the query itself
 - [ ] Option of retrieving more than one page of hits for a query
 - [ ] Option of retrieving just the top _n_ hits for a query
