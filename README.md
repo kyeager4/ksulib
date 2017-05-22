@@ -1,4 +1,4 @@
-# ksulib
+# ksulibSearch
 
 This package contains convenience functions for testing our site search.
 
@@ -15,19 +15,19 @@ install.packages(c("devtools", "dplyr", "xml2", "rvest", "httr", "curl", "tidyr"
 You will then need to install this package:
 ```{r}
 library(devtools)
-install_github("kyeager4/ksulib")
+install_github("kyeager4/ksulibSearch")
 ```
 
 Once the packages are installed, you do not have to re-install them the next time you launch R.
 
-If there are changes to the code in this package, you can rerun `install_github("kyeager4/ksulib")` to update to the most recent version.
+If there are changes to the code in this package, you can rerun `install_github("kyeager4/ksulibSearch")` to update to the most recent version.
 
 ## Using this package
 
 To use this package:
 ```{r}
 ## Load this package (only needs to be done once, at the start of your R session.)
-library(ksulib)
+library(ksulibSearch)
 
 ## Test a single query on the production site.
 query_example1 <- run_ksu_search("hours")
